@@ -1,0 +1,33 @@
+body {
+	margin: 0;
+	padding: 2rem;
+	min-width: 100vw;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	.container {
+		margin: auto;
+		padding: 20px;
+		.title {
+			text-align: center;
+		}
+		.cards {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+	}
+}
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+	body {
+		color: blue;
+	}
+}
+
+@media only screen and (max-width: 899px) {
+	body {
+		color: red;
+		.container .cards {
+			flex-direction: column;
+		}
+	}
+}
