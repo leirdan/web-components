@@ -18,10 +18,29 @@ body .container .cards {
   flex-direction: row;
   justify-content: space-around;
 }
+body .container .cards .card {
+  border: 1px solid black;
+  padding: 2rem;
+}
+body .container .cards .card .card-body {
+  width: 10vw;
+}
+body .container .cards .card .card-body .title-album {
+  font-weight: 600;
+  text-align: center;
+}
+body .container .cards .card .card-body .info-album {
+  font-weight: 300;
+  text-align: end;
+  color: gray;
+}
+body .container .cards .card .card-body .description {
+  width: 50px;
+}
 
 @media only screen and (min-width: 900px) and (max-width: 1200px) {
   body {
-    color: blue;
+    color: black;
   }
 }
 @media only screen and (max-width: 899px) {
@@ -30,6 +49,7 @@ body .container .cards {
   }
   body .container .cards {
     flex-direction: column;
+    align-items: center;
   }
 }
 

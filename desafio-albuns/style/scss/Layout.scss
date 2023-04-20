@@ -14,12 +14,32 @@ body {
 			display: flex;
 			flex-direction: row;
 			justify-content: space-around;
+			.card {
+				border: 1px solid black;
+				padding: 2rem;
+				// margin: 0rem 1rem 0rem 1rem;
+				.card-body {
+					width: 10vw;
+					.title-album {
+						font-weight: 600;
+						text-align: center;
+					}
+					.info-album {
+						font-weight: 300;
+						text-align: end;
+						color: gray;
+					}
+					.description {
+						width: 50px;
+					}
+				}
+			}
 		}
 	}
 }
 @media only screen and (min-width: 900px) and (max-width: 1200px) {
 	body {
-		color: blue;
+		color: black;
 	}
 }
 
@@ -28,6 +48,7 @@ body {
 		color: red;
 		.container .cards {
 			flex-direction: column;
+			align-items: center;
 		}
 	}
 }
