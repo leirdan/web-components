@@ -1,34 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cards</title>
     <link rel="stylesheet" href="./styles/card.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="card">
-            <div class="card-left">
-                <span id="author"> Duncan Octavius </span>
-                <h1 id="title"> Banda Behemoth anuncia colaboração com a banda Batushka em seu mais novo álbum, Lorem
-                    ipsum!</h1>
-                <p id="description"> Anunciada em 2023, a parceria mais que aguardada pelos fãs foi confirmada em um
-                    post no Instagram do Behemoth.</p>
-            </div>
-            <div class="card-right">
-                <img src="./assets/Behemoth-Knotfest-MattStasi-4248.jpg"
-                    alt="Nergal, vocalista do Behemoth, em momento no Knotfest." title="Nergal, vocalista do Behemoth"
-                    id="img" width="320">
-            </div>
-        </div>
+        <card-news author="andrieu" title="Banda Behemoth anuncia colaboração com a banda Batushka em seu mais novo álbum, Lorem
+    ipsum!" description=" Anunciada em 2023, a parceria mais que aguardada pelos fãs foi confirmada em um
+    post no Instagram do Behemoth."> </card-news>
     </div>
-    <card-news></card-news>
-
-    <script src="./src/components/CardNews.js"></script>
+    <script src="./src/components/CardNews.js" defer></script>
 </body>
 
 </html>
