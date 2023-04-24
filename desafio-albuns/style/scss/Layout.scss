@@ -1,54 +1,37 @@
-body {
+@import "./Variables.scss";
+
+* {
 	margin: 0;
-	padding: 2rem;
-	min-width: 100vw;
+	padding: 1rem;
 	box-sizing: border-box;
-	font-family: "Poppins", sans-serif;
+	font-family: $primary-font;
+}
+body {
+	background: linear-gradient(to right, $left-color, $right-color);
+	.title {
+		text-align: center;
+		color: white;
+	}
+	.subtitle {
+		text-align: center;
+		color: white;
+	}
 	.container {
 		margin: auto;
+		display: flex;
 		padding: 20px;
-		.title {
-			text-align: center;
-		}
-		.cards {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-around;
-			.card {
-				border: 1px solid black;
-				padding: 2rem;
-				// margin: 0rem 1rem 0rem 1rem;
-				.card-body {
-					width: 10vw;
-					.title-album {
-						font-weight: 600;
-						text-align: center;
-					}
-					.info-album {
-						font-weight: 300;
-						text-align: end;
-						color: gray;
-					}
-					.description {
-						width: 50px;
-					}
-				}
-			}
-		}
-	}
-}
-@media only screen and (min-width: 900px) and (max-width: 1200px) {
-	body {
-		color: black;
+		justify-content: space-around;
+		text-align: center;
 	}
 }
 
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+	.container {
+		color: black;
+	}
+}
 @media only screen and (max-width: 899px) {
-	body {
+	.container {
 		color: red;
-		.container .cards {
-			flex-direction: column;
-			align-items: center;
-		}
 	}
 }
