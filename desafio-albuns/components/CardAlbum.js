@@ -73,7 +73,8 @@ class CardAlbum extends HTMLElement {
 		  }
 
 		.card .card-body {
-			width: 25vh;
+			width: 20rem;
+			text-align: center;
 		}
 
 		.card .card-body .title-album {
