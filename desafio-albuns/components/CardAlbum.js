@@ -26,7 +26,8 @@ class CardAlbum extends HTMLElement {
 
 		const body = document.createElement("div");
 		body.setAttribute("class", "card-body");
-		const title = document.createElement("p");
+		const title = document.createElement("a");
+		title.setAttribute("href", `${this.getAttribute("link")}`);
 		title.textContent = `${this.getAttribute("title")}`;
 		title.setAttribute("class", "title-album");
 		const info = document.createElement("p");
@@ -61,7 +62,7 @@ class CardAlbum extends HTMLElement {
 			border-radius: 10px;
 			box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
   			margin: 20px;
-		  	transition: all 0.3s ease-out;
+		  	transition: all 0.4s ease-out;
 			border: 0.1px solid #4895ff;
 			background: white;
 		}
@@ -78,8 +79,13 @@ class CardAlbum extends HTMLElement {
 		.card .card-body .title-album {
 			font-weight: 600;
 			text-align: center;
+			color: black;
+			text-decoration: none;
 		}
 
+		.card .card-body .title-album:hover {
+			opacity: 0.75;
+		}
 		.card .card-body .info-album {
 			font-weight: 300;
 			text-align: end;
